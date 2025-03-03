@@ -1,11 +1,10 @@
 # MyShop - Order Management System
-![Screenshot 2025-03-02 205246](https://github.com/user-attachments/assets/73b38d67-f943-4789-8246-d8662c47864a)
-![Screenshot 2025-03-02 205555](https://github.com/user-attachments/assets/7e11a37e-d297-4c4f-8ae1-38cdde6b4358)
-![Screenshot 2025-03-02 205608](https://github.com/user-attachments/assets/505742b7-c929-4081-b1be-09c7ba4bd7b9)
-![Screenshot 2025-03-02 205624](https://github.com/user-attachments/assets/7f3644f2-5b5c-4d08-8404-1644c2378b25)
-![Screenshot 2025-03-02 205645](https://github.com/user-attachments/assets/5663af28-01c2-4d8a-b040-cd1828563785)
-![Screenshot 2025-03-02 205235](https://github.com/user-attachments/assets/88ef6f18-e4b7-44e0-b0af-559c18b5c45e)
-
+![Screenshot 2025-03-02 205235](https://github.com/user-attachments/assets/9b0c7ddb-7fb3-48b8-a68a-f6fab93e0169)
+![Screenshot 2025-03-02 205246](https://github.com/user-attachments/assets/5470051d-c048-4778-9ebf-e723b5e343cd)
+![Screenshot 2025-03-02 205555](https://github.com/user-attachments/assets/c0846d61-a47b-44d3-874b-632ce3821f6a)
+![Screenshot 2025-03-02 205608](https://github.com/user-attachments/assets/7a2a0fb2-8755-48b5-a29c-fa80916d1e87)
+![Screenshot 2025-03-02 205624](https://github.com/user-attachments/assets/b1315f66-9b74-4df2-9833-af583e330289)
+![Screenshot 2025-03-02 205645](https://github.com/user-attachments/assets/455e2153-f4fb-4f7e-b4a0-7cfe8f334b21)
 
 ## Description
 MyShop is a simple order management system built with Node.js and Express. It allows users to create, view, and manage customer orders with product details, tax calculations, and shipping options.
