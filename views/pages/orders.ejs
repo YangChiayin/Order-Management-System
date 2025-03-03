@@ -1,0 +1,52 @@
+<head>
+    <title>MyShop - Receipt Order</title>
+    <%- include('../shared/head') %>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Orders</h1>
+        <p><a href="/" class="link-primary">New Order</a></p>
+        <% if (orders.length ===0) { %>
+            <div class="alert alert-danger" role="alert">
+                No order found! please place an order.
+            </div>
+         <% } else { %>
+           <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>SubTotal</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% orders.forEach(order => { %>
+                  <tr>
+                    <td>
+                        <%= order.customerName %><br/>
+                        <%= order.customerEmail %><br/>
+                        <%= order.address %><br/>
+                        <%= order.customerPhone %><br/>
+
+                    </td>
+                    <td>$ <%= order.subtotal.toFixed(2)  %></td>
+                    <td>$ <%= order.tax.toFixed(2)  %></td>
+                    <td>$ <%= order.total.toFixed(2)  %></td>
+                    <td>
+                        <a class="btn btn-info" href="/orders/<%= order._id %>" role="button">View</a>
+                        <a class="btn btn-danger" href="/orders/<%= order._id %>/delete" role="Delete">Delete</a>
+
+                    </td>
+
+                  </tr>
+                <% }) %>
+            </tbody>
+           </table>
+        <% } %>
+        <%- include('../shared/footer') %>
+    </div>
+    <%- include('../shared/script') %>
+</body>

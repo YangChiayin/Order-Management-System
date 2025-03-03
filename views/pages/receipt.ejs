@@ -1,0 +1,96 @@
+<head>
+    <title>MyShop - Receipt</title>
+    <%- include('../shared/head') %>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Receipt</h1>
+
+        <p><a href="/" class="link-primary">New Order</a></p>
+        <p><a href="/orders" class="link-primary">All Orders</a></p>
+
+        <p>Thank you for your order!</p>
+
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td>NAME:</td>
+                    <td>
+                        <%= customerName %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>EMAIL:</td>
+                    <td>
+                        <%= customerEmail %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>PHONE:</td>
+                    <td>
+                        <%= customerPhone %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>DELIVERY ADDRESS:</td>
+                    <td>
+                        <%= address %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <% if (total !=0) { %>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Unit Price</th>
+                    <th>Quantity</th>
+                    <th>Line Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% products.forEach(product=> { %>
+                    <% if (product.quantity !== 0) { %>
+                    <tr>
+                        <td><%= product.name %></td>
+                        <td>$ <%= product.price.toFixed(2) %></td>
+                        <td><%= product.quantity %></td>
+                        <td>$ <%= product.lineTotal.toFixed(2) %></td>
+                    </tr>
+                    <% } %>
+                <% }) %>
+                
+            </tbody>
+        </table>
+
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                    <td>SHIPPING CHARGE</td>
+                    <td>$ <%= shippingCharge.toFixed(2) %></td>
+                </tr>
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td>$ <%= subtotal.toFixed(2) %></td>
+                </tr>
+                <tr>
+                    <td>TAXES @ <%= taxRate * 100 %>%</td>
+                    <td>$ <%= tax.toFixed(2) %></td>
+                </tr>
+                <tr>
+                    <td>TOTAL</td>
+                    <td>$ <%= total.toFixed(2) %></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <% } %>
+        
+        <%- include('../shared/footer') %>
+    </div>
+    <%- include('../shared/script') %>
+</body>
