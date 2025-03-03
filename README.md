@@ -1,4 +1,4 @@
-# MyShop - Order Management System
+# Order Management System
 ![Screenshot 2025-03-02 205235](https://github.com/user-attachments/assets/9b0c7ddb-7fb3-48b8-a68a-f6fab93e0169)
 ![Screenshot 2025-03-02 205246](https://github.com/user-attachments/assets/5470051d-c048-4778-9ebf-e723b5e343cd)
 ![Screenshot 2025-03-02 205555](https://github.com/user-attachments/assets/c0846d61-a47b-44d3-874b-632ce3821f6a)
