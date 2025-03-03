@@ -7,7 +7,7 @@
 ![Screenshot 2025-03-02 205645](https://github.com/user-attachments/assets/455e2153-f4fb-4f7e-b4a0-7cfe8f334b21)
 
 ## Description
-MyShop is a simple order management system built with Node.js and Express. It allows users to create, view, and manage customer orders with product details, tax calculations, and shipping options.
+A simple order management system built with Node.js and Express. It allows users to create, view, and manage customer orders with product details, tax calculations, and shipping options.
 
 ## Features
 - **Create new orders** with customer information
